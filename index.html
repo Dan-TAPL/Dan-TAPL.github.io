@@ -353,7 +353,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:16px 4
   .timeline-90-card{margin-top:0;flex:1;border-top:1px solid var(--border);border-left:2px solid var(--red);border-radius:0 8px 8px 0;height:auto;}
   .timeline-90-card::before{display:none;}
 }
-@media(max-width:1024px){
+@media(min-width:769px) and (max-width:1024px){
   .coaching-hero{padding-left:28px;padding-right:28px;}
   .coaching-problem{padding-left:28px;padding-right:28px;}
   .coaching-why{padding-left:28px;padding-right:28px;}
@@ -363,6 +363,14 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:16px 4
   .first-90{padding-left:28px;padding-right:28px;}
   .comparison-section{padding-left:28px;padding-right:28px;}
   .meet-dan-inner{grid-template-columns:320px 1fr;gap:48px;}
+}
+
+/* Narrow phones: let the approach timeline wrap so the text card isn't crushed */
+@media(max-width:560px){
+  .timeline-90-stage{flex-wrap:wrap;align-items:flex-start;gap:12px 16px;}
+  .timeline-90-title-above{width:100%;flex-direction:row;align-items:center;gap:10px;padding-top:0;}
+  .timeline-90-circle{margin-top:0;}
+  .timeline-90-card{flex:1 1 auto;min-width:0;}
 }
 
 /* ─── Pricing / Tiers ─── */
@@ -1750,7 +1758,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
     #page-tools .tools-foot-cta{margin-top:40px;padding:28px 32px;border:1px solid var(--border);border-radius:8px;background:var(--card);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
     #page-tools .tools-foot-cta a{color:var(--red);font-weight:700;cursor:pointer;white-space:nowrap;}
     #page-tools .tools-foot-cta a:hover{opacity:0.7;}
-    @media(max-width:600px){#page-tools .prod-card{padding:26px;}}
+    @media(max-width:600px){#page-tools .prod-card{padding:26px;}#page-tools .prod-head{flex-direction:column;align-items:flex-start;gap:12px;}}
   </style>
   <section class="section">
     <div class="section-label">Tools &amp; Hub</div>
