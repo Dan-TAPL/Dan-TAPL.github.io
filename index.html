@@ -1758,16 +1758,17 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
     #page-tools .prod-features{list-style:none;margin:4px 0 0;padding:0;}
     #page-tools .prod-features li{font-size:15px;color:var(--muted);line-height:1.6;padding:6px 0;display:flex;gap:10px;align-items:flex-start;}
     #page-tools .prod-features li::before{content:'\B7';color:var(--red);font-weight:700;font-size:18px;line-height:1;flex-shrink:0;}
-    #page-tools .tools-foot-cta{margin-top:40px;padding:28px 32px;border:1px solid var(--border);border-radius:8px;background:var(--card);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
+    #page-tools .tools-foot-cta{margin:28px auto 0;max-width:900px;padding:28px 32px;border:1px solid var(--border);border-radius:8px;background:var(--card);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
     #page-tools .tools-foot-cta a{color:var(--red);font-weight:700;cursor:pointer;white-space:nowrap;}
+    #page-tools .tools-foot-cta a.btn-primary{color:#fff;text-decoration:none;padding:16px 34px;font-size:14px;}
     #page-tools .tools-foot-cta a:hover{opacity:0.7;}
     @media(max-width:600px){#page-tools .prod-card{padding:26px;}#page-tools .prod-head{flex-direction:column;align-items:flex-start;gap:12px;}}
-    #page-tools .ph-eyebrow{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:14px;}
-    #page-tools .ph-title{font-family:'Montserrat',sans-serif;font-size:clamp(34px,5vw,52px);font-weight:900;line-height:1.05;letter-spacing:-1px;margin:0 0 14px;color:var(--white);}
-    #page-tools .ph-strapline{font-family:'DM Sans',sans-serif;font-style:italic;font-size:18px;color:rgba(244,243,248,0.85);margin:0 0 24px;}
-    #page-tools .ph-intro{max-width:760px;font-size:16px;color:var(--muted);line-height:1.8;margin:0 0 26px;}
-    #page-tools .ph-subline{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.3px;color:var(--white);margin:0 0 44px;}
-    #page-tools .ph-tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:stretch;max-width:900px;}
+    #page-tools .ph-eyebrow{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:14px;text-align:center;}
+    #page-tools .ph-title{font-family:'Montserrat',sans-serif;font-size:clamp(34px,5vw,52px);font-weight:900;line-height:1.05;letter-spacing:-1px;margin:0 0 14px;color:var(--white);text-align:center;}
+    #page-tools .ph-strapline{font-family:'DM Sans',sans-serif;font-style:italic;font-size:18px;color:rgba(244,243,248,0.85);margin:0 0 24px;text-align:center;}
+    #page-tools .ph-intro{max-width:760px;font-size:16px;color:var(--muted);line-height:1.8;margin:0 auto 26px;text-align:center;}
+    #page-tools .ph-subline{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.3px;color:var(--white);margin:0 0 44px;text-align:center;}
+    #page-tools .ph-tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:stretch;max-width:900px;margin:0 auto;}
     #page-tools .ph-tier{position:relative;display:flex;flex-direction:column;border:1px solid var(--border);border-radius:12px;background:var(--card);padding:38px 32px;}
     #page-tools .ph-tier.featured{border-color:rgba(232,69,60,0.5);background:linear-gradient(180deg,rgba(232,69,60,0.06) 0%,rgba(255,255,255,0.02) 100%);box-shadow:0 20px 60px -30px rgba(232,69,60,0.4);}
     #page-tools .ph-tier.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);border-radius:12px 12px 0 0;}
@@ -1782,13 +1783,13 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
     #page-tools .ph-cta-wrap{margin-top:44px;text-align:center;}
     #page-tools .ph-cta-btn{display:inline-block;text-decoration:none;font-size:15px;padding:18px 44px;}
     #page-tools .ph-cta-support{font-size:13px;color:var(--muted);margin:16px auto 0;max-width:520px;line-height:1.6;}
-    @media(max-width:760px){#page-tools .ph-tiers{grid-template-columns:1fr;}#page-tools .ph-tier.featured{margin-top:12px;}}
+    @media(max-width:760px){#page-tools .ph-tiers{grid-template-columns:1fr;}#page-tools .ph-tier.featured{margin-top:12px;}#page-tools .tools-foot-cta{flex-direction:column;text-align:center;gap:18px;}#page-tools .tools-foot-cta a.btn-primary{width:100%;text-align:center;}}
   </style>
   <section class="section">
     <div class="ph-eyebrow">Performance Hub by TAPL</div>
     <h1 class="ph-title">Performance Hub</h1>
     <p class="ph-strapline"><em>Action, Accountability &amp; Outcome. With people who get it.</em></p>
-    <p class="ph-intro">Not another course you&rsquo;ll never watch. Performance Hub gives your working day a shape &mdash; a morning that sets one clear intention, a plan that survives contact with reality, and an evening reset that closes the loop. Plus a library of guided workflows for the moments it all goes sideways.</p>
+    <p class="ph-intro">Not another course you&rsquo;ll never watch. Performance Hub gives your working day a shape: a morning that sets one clear intention, a plan that survives contact with reality, and an evening reset that closes the loop. Plus a library of guided workflows for the moments it all goes sideways.</p>
     <p class="ph-subline">Two ways in. Start where you are, move up when you&rsquo;re ready.</p>
 
     <div class="ph-tiers">
@@ -1796,14 +1797,13 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="ph-tier-name">Performance Hub Basic</div>
         <p class="ph-tier-line">The system, and people who get it.</p>
         <ul class="ph-tier-features">
-          <li>The guided daily pathways &mdash; Morning Calibration, Run My Day, Evening Reset</li>
-          <li>Full access to the Workflow library &mdash; Activation, Recovery, Clarity, Calibration and Bandwidth</li>
+          <li>The guided daily pathways: Morning Calibration, Run My Day, Evening Reset</li>
+          <li>Full access to the Workflow library: Activation, Recovery, Clarity, Calibration and Bandwidth</li>
           <li>The Focus Engine planner</li>
-          <li>&ldquo;How are you feeling?&rdquo; &mdash; one right move, whatever state you&rsquo;re in</li>
+          <li>&ldquo;How are you feeling?&rdquo; One right move, whatever state you&rsquo;re in</li>
           <li>The community space</li>
-          <li>Group sessions and video from Dan</li>
         </ul>
-        <p class="ph-tier-smallprint">Group access only &mdash; no private line to Dan.</p>
+        <p class="ph-tier-smallprint">Group access only. No private line to Dan.</p>
       </div>
       <div class="ph-tier featured">
         <div class="ph-tier-badge">Most Support</div>
@@ -1811,7 +1811,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <p class="ph-tier-line">Everything in Basic, plus me.</p>
         <ul class="ph-tier-features">
           <li>Everything in Basic</li>
-          <li>Direct video and voice messaging with Dan &mdash; reply within 2&ndash;3 working days</li>
+          <li>Direct video and voice messaging with Dan, with a reply within 2-3 working days</li>
           <li>Body-doubling drop-in sessions</li>
           <li>Accountability check-ins</li>
           <li>Monthly workshops and roundtables</li>
@@ -1819,17 +1819,12 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
       </div>
     </div>
 
-    <div class="ph-cta-wrap">
-      <a class="btn-primary ph-cta-btn" href="https://forms.gle/VoXcyHKeUj2xXBnQ6" target="_blank" rel="noopener noreferrer">Join the waitlist &rarr;</a>
-      <p class="ph-cta-support">Performance Hub opens soon. Founding-member pricing and first access go to people on the list.</p>
-    </div>
-
     <div class="tools-foot-cta">
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;margin-bottom:6px;">Want first access when these launch?</div>
         <div style="font-size:14px;color:var(--muted);">Founding-member pricing and early access will be offered to people on the list.</div>
       </div>
-      <a href="https://forms.gle/VoXcyHKeUj2xXBnQ6" target="_blank" rel="noopener noreferrer">Join the waitlist &rarr;</a>
+      <a class="btn-primary" href="https://forms.gle/VoXcyHKeUj2xXBnQ6" target="_blank" rel="noopener noreferrer">Join the waitlist &rarr;</a>
     </div>
   </section>
 
