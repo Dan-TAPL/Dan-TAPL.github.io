@@ -787,7 +787,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         </div>
         <div class="flip-card-back">
           <div class="card-back-tag">TAPL Foundation</div>
-          <p class="card-back-desc">Structured one-to-one coaching at a more accessible commitment level. Consistent support without the full programme.</p>
+          <p class="card-back-desc">Structured one to one coaching at a lighter intensity. Consistent support, fewer sessions.</p>
           <div class="card-back-link" onclick="event.stopPropagation();showPage('coaching')">Find out more →</div>
         </div>
       </div>
@@ -1553,8 +1553,12 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
       .prog-col-a-desc{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:24px;min-height:98px;}
       .prog-col-a-price{padding:20px 0;margin-bottom:24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center;}
       .prog-col-a-price-label{font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;}
-      .prog-col-a-price-value{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:var(--white);}
-      .prog-col-a-features{list-style:none;margin-bottom:28px;flex-grow:1;}
+      .prog-col-a-price-value{font-family:'Montserrat',sans-serif;font-size:26px;font-weight:700;color:var(--white);}
+      .prog-col-a-price-per{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--muted);}
+      .prog-col-a-price-sub{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5;}
+      .prog-col-a-features{list-style:none;margin-bottom:22px;flex-grow:1;}
+      .prog-col-a-pay{font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:22px;}
+      .prog-col-a-pay .save{color:var(--red);font-weight:700;}
       .prog-col-a-features li{font-size:13px;color:var(--muted);line-height:1.55;padding:10px 0;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;}
       .prog-col-a-features li::before{content:'→';color:var(--red);flex-shrink:0;font-weight:700;}
       .prog-col-a-features li:last-child{border-bottom:none;}
@@ -1564,6 +1568,14 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
       .prog-col-a-btn.outline{background:transparent;color:var(--red);}
       .prog-col-a-btn.outline:hover{background:var(--red);color:#fff;}
       @media(max-width:900px){.prog-grid-a{grid-template-columns:1fr;gap:32px;}.prog-col-a.featured{margin-top:12px;}.prog-col-a-desc{min-height:0;}}
+      .eng-terms{margin-top:40px;border:1px solid var(--border);border-radius:8px;background:var(--card);overflow:hidden;}
+      .eng-terms-summary{list-style:none;cursor:pointer;padding:22px 28px;font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--white);display:flex;justify-content:space-between;align-items:center;gap:16px;}
+      .eng-terms-summary::-webkit-details-marker{display:none;}
+      .eng-terms-icon{color:var(--red);font-size:22px;font-weight:700;line-height:1;transition:transform 0.2s ease;flex-shrink:0;}
+      .eng-terms[open] .eng-terms-icon{transform:rotate(45deg);}
+      .eng-terms-body{padding:0 28px 26px;}
+      .eng-terms-body p{font-size:14px;color:var(--muted);line-height:1.75;margin:0 0 14px;}
+      .eng-terms-body p:last-child{margin-bottom:0;}
     </style>
 
     <div class="prog-grid-a">
@@ -1572,16 +1584,17 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="prog-col-a-tag">TAPL Foundation</div>
         <div class="prog-col-a-name">Foundation</div>
         <div class="prog-col-a-subtitle">For individuals</div>
-        <p class="prog-col-a-desc">Structured one-to-one coaching at a more accessible commitment level. Focused, regular sessions for clients who want consistent support without the full programme.</p>
+        <p class="prog-col-a-desc">Structured one to one coaching for clients who want consistent support at a lighter intensity. The same 12-week programme, fewer sessions.</p>
         <div class="prog-col-a-price">
-          <div class="prog-col-a-price-label">Investment</div>
-          <div class="prog-col-a-price-value">On request</div>
+          <div class="prog-col-a-price-value">&pound;550 <span class="prog-col-a-price-per">per month</span></div>
+          <div class="prog-col-a-price-sub">12-week minimum programme, 6 sessions. Then rolling monthly.</div>
         </div>
         <ul class="prog-col-a-features">
           <li>2 x 40-minute sessions per month</li>
-          <li>Selected Workflows shared as relevant to your sessions</li>
-          <li>Workflows access for the duration of the engagement</li>
+          <li>Full Performance Hub Plus access included</li>
+          <li>Messages answered within 2 working days</li>
         </ul>
+        <div class="prog-col-a-pay">Pay monthly: 3 payments of &pound;550<br>Or pay in full: &pound;1,525 <span class="save">(save &pound;125)</span></div>
         <button class="prog-col-a-btn outline" onclick="showPage('contact-legal')">Book a call</button>
       </div>
       <!-- TAPL Pro (centre, featured) -->
@@ -1590,18 +1603,18 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="prog-col-a-tag">TAPL Pro</div>
         <div class="prog-col-a-name">Pro</div>
         <div class="prog-col-a-subtitle">For individuals</div>
-        <p class="prog-col-a-desc">The core TAPL programme. Deeply personalised performance coaching delivered one-to-one, built around your specific executive function friction points with bespoke systems designed around them.</p>
+        <p class="prog-col-a-desc">The core TAPL programme. Deeply personalised performance coaching delivered one to one, built around your specific executive function friction points with bespoke systems designed around them.</p>
         <div class="prog-col-a-price">
-          <div class="prog-col-a-price-label">Investment</div>
-          <div class="prog-col-a-price-value">On request</div>
+          <div class="prog-col-a-price-value">&pound;950 <span class="prog-col-a-price-per">per month</span></div>
+          <div class="prog-col-a-price-sub">12-week minimum programme, 12 sessions. Then rolling monthly.</div>
         </div>
         <ul class="prog-col-a-features">
           <li>4 x 40-minute sessions per month</li>
-          <li>Unlimited access to all Workflows</li>
-          <li>Full Performance Hub access for the engagement</li>
-          <li>Async support between sessions via Clarityflow</li>
+          <li>Full Performance Hub Plus access included</li>
+          <li>Video and voice support between sessions, answered within 1 working day</li>
           <li>ICF-aligned, bespoke and responsive</li>
         </ul>
+        <div class="prog-col-a-pay">Pay monthly: 3 payments of &pound;950<br>Or pay in full: &pound;2,650 <span class="save">(save &pound;200)</span></div>
         <button class="prog-col-a-btn primary" onclick="showPage('contact-legal')">Book a call</button>
       </div>
       <!-- TAPL Business (right) -->
@@ -1611,8 +1624,8 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="prog-col-a-subtitle">For teams &amp; businesses</div>
         <p class="prog-col-a-desc">A bespoke blend of Foundation and Pro delivery for organisations, designed to build neuro-inclusive performance cultures. Scoped to your organisation's specific needs and goals.</p>
         <div class="prog-col-a-price">
-          <div class="prog-col-a-price-label">Investment</div>
-          <div class="prog-col-a-price-value">On request</div>
+          <div class="prog-col-a-price-value" style="font-size:19px;">Investment on request</div>
+          <div class="prog-col-a-price-sub">12-week minimum programme per participant.</div>
         </div>
         <ul class="prog-col-a-features">
           <li>Bespoke programme design and scoping</li>
@@ -1624,7 +1637,17 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
       </div>
     </div>
 
-    <div style="margin-top:48px;padding:24px;border:1px solid var(--border);border-radius:8px;background:var(--card);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;">
+    <details class="eng-terms">
+      <summary class="eng-terms-summary">How coaching engagements work<span class="eng-terms-icon">+</span></summary>
+      <div class="eng-terms-body">
+        <p>All coaching programmes run a 12-week minimum term. Foundation is 6 sessions, Pro and Business are 12. After that, the engagement continues on a rolling monthly basis at the same rate, with 7 days notice to end it.</p>
+        <p>The 12 weeks exist for a delivery reason. Meaningful change in executive function is not typically visible in four sessions, and the early phase of coaching surfaces patterns rather than resolving them. The minimum term gives the work enough runway to be judged fairly.</p>
+        <p>Ending an engagement early during the minimum term is possible on 7 days notice, with an early exit fee. Full terms are set out in the Coaching Services Agreement, which we send before you commit to anything.</p>
+        <p>Payment is by direct debit, in advance of each monthly block, or in full at the start if you take the discounted option.</p>
+      </div>
+    </details>
+
+    <div style="margin-top:24px;padding:24px;border:1px solid var(--border);border-radius:8px;background:var(--card);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;">
       <div>
         <div style="font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;margin-bottom:6px;">Not sure which is right for you?</div>
         <div style="font-size:14px;color:var(--muted);">Book a no-obligation discovery call and we'll work it out together.</div>
@@ -1664,7 +1687,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
             <span class="faq-chevron">&#8964;</span>
           </button>
           <div class="faq-answer">
-            TAPL is premium coaching priced for professionals, business owners and entrepreneurs who are serious about performance. Programmes are typically three or six months in length, and investment is significant, reflecting the depth of work and level of personalisation. Specific pricing is shared on the discovery call once we understand what you're looking for. If cost is likely to be a barrier, the Foundation tier is a more accessible entry point.
+            TAPL is premium coaching for professionals, business owners and entrepreneurs who are serious about performance. Foundation is &pound;550 a month and Pro is &pound;950 a month, each running as a 12-week minimum programme and then continuing on a rolling monthly basis at the same rate. Both can be paid monthly or in full for a discount, and both include full Performance Hub Plus access. Business programmes are scoped and priced individually. The programme cards set out exactly what each tier includes, and we'll help you choose the right fit on a discovery call.
           </div>
         </div>
         <div class="faq-item">
@@ -1682,7 +1705,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
             <span class="faq-chevron">&#8964;</span>
           </button>
           <div class="faq-answer">
-            TAPL Pro suits people who want the full programme: more sessions each month, unlimited Workflows, Performance Hub access, and async support between sessions. Foundation suits people who want structured one-to-one coaching at a more accessible commitment level, with fewer sessions and selected Workflows. If you're unsure, mention both on the discovery call and we'll work out which fits your situation.
+            TAPL Pro suits people who want the full programme: four sessions a month, full Performance Hub Plus access, and video and voice support between sessions answered within one working day. Foundation is the lighter-intensity option: the same 12-week programme with two sessions a month and messages answered within two working days. Both include full Performance Hub Plus access, and with it the complete Workflow library. If you're unsure, mention both on the discovery call and we'll work out which fits your situation.
           </div>
         </div>
         <div class="faq-item">
@@ -1767,7 +1790,11 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
     #page-tools .ph-title{font-family:'Montserrat',sans-serif;font-size:clamp(34px,5vw,52px);font-weight:900;line-height:1.05;letter-spacing:-1px;margin:0 0 14px;color:var(--white);text-align:center;}
     #page-tools .ph-strapline{font-family:'DM Sans',sans-serif;font-style:italic;font-size:18px;color:rgba(244,243,248,0.85);margin:0 0 24px;text-align:center;}
     #page-tools .ph-intro{max-width:760px;font-size:16px;color:var(--muted);line-height:1.8;margin:0 auto 26px;text-align:center;}
-    #page-tools .ph-subline{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.3px;color:var(--white);margin:0 0 44px;text-align:center;}
+    #page-tools .ph-subline{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.3px;color:var(--white);margin:0 0 12px;text-align:center;}
+    #page-tools .ph-minterm{font-size:14px;color:var(--muted);text-align:center;margin:0 0 44px;}
+    #page-tools .ph-tier-price{font-family:'Montserrat',sans-serif;font-size:30px;font-weight:900;color:var(--white);margin:2px 0 2px;}
+    #page-tools .ph-tier-per{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--muted);}
+    #page-tools .ph-tier-price-alt{font-size:13px;color:var(--muted);margin:0 0 20px;}
     #page-tools .ph-tiers{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:stretch;max-width:900px;margin:0 auto;}
     #page-tools .ph-tier{position:relative;display:flex;flex-direction:column;border:1px solid var(--border);border-radius:12px;background:var(--card);padding:38px 32px;}
     #page-tools .ph-tier.featured{border-color:rgba(232,69,60,0.5);background:linear-gradient(180deg,rgba(232,69,60,0.06) 0%,rgba(255,255,255,0.02) 100%);box-shadow:0 20px 60px -30px rgba(232,69,60,0.4);}
@@ -1791,11 +1818,14 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
     <p class="ph-strapline"><em>Action, Accountability &amp; Outcome. With people who get it.</em></p>
     <p class="ph-intro">Not another course you&rsquo;ll never watch. Performance Hub gives your working day a shape: a morning that sets one clear intention, a plan that survives contact with reality, and an evening reset that closes the loop. Plus a library of guided workflows for the moments it all goes sideways.</p>
     <p class="ph-subline">Two ways in. Start where you are, move up when you&rsquo;re ready.</p>
+    <p class="ph-minterm">No minimum term. Rolling monthly, cancel any time.</p>
 
     <div class="ph-tiers">
       <div class="ph-tier">
         <div class="ph-tier-name">Performance Hub Basic</div>
         <p class="ph-tier-line">The system, and people who get it.</p>
+        <div class="ph-tier-price">&pound;45 <span class="ph-tier-per">per month</span></div>
+        <div class="ph-tier-price-alt">or &pound;450 for the year</div>
         <ul class="ph-tier-features">
           <li>The guided daily pathways: Morning Calibration, Run My Day, Evening Reset</li>
           <li>Full access to the Workflow library: Activation, Recovery, Clarity, Calibration and Bandwidth</li>
@@ -1809,9 +1839,11 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="ph-tier-badge">Most Support</div>
         <div class="ph-tier-name">Performance Hub Plus</div>
         <p class="ph-tier-line">Everything in Basic, plus me.</p>
+        <div class="ph-tier-price">&pound;95 <span class="ph-tier-per">per month</span></div>
+        <div class="ph-tier-price-alt">or &pound;950 for the year</div>
         <ul class="ph-tier-features">
           <li>Everything in Basic</li>
-          <li>Direct video and voice messaging with Dan, with a reply within 2-3 working days</li>
+          <li>Direct video and voice messaging with Dan, answered within 2 to 3 working days, up to four threads a month</li>
           <li>Body-doubling drop-in sessions</li>
           <li>Accountability check-ins</li>
           <li>Monthly workshops and roundtables</li>
@@ -1821,8 +1853,8 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
 
     <div class="tools-foot-cta">
       <div>
-        <div style="font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;margin-bottom:6px;">Want first access when these launch?</div>
-        <div style="font-size:14px;color:var(--muted);">Founding-member pricing and early access will be offered to people on the list.</div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;margin-bottom:6px;">Founding members</div>
+        <div style="font-size:14px;color:var(--muted);max-width:560px;">The first 25 Basic and 15 Plus members pay &pound;29 and &pound;65 a month, and keep that rate for as long as they stay subscribed.</div>
       </div>
       <a class="btn-primary" href="https://forms.gle/VoXcyHKeUj2xXBnQ6" target="_blank" rel="noopener noreferrer">Join the waitlist &rarr;</a>
     </div>
@@ -2476,7 +2508,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
           <span class="accordion-arrow">&#8964;</span>
         </button>
         <div class="accordion-body">
-          <p>Full cancellation terms are set out in your Coaching Services Agreement and Terms &amp; Conditions, which are provided before any programme begins. In summary: sessions require a minimum of 24 hours&rsquo; written notice to cancel or reschedule, and sessions missed without notice are treated as used and are non-refundable. TAPL may cancel or reschedule sessions in exceptional circumstances, in which case an alternative time will be arranged.</p>
+          <p>Full cancellation terms are set out in your Coaching Services Agreement and Terms &amp; Conditions, which are provided before any programme begins. In summary: sessions require a minimum of 24 hours written notice to cancel or reschedule, and sessions missed without notice are treated as used and are non-refundable. TAPL may cancel or reschedule sessions in exceptional circumstances, in which case an alternative time will be arranged.</p>
         </div>
       </div>
 
