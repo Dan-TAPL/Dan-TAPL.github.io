@@ -1537,7 +1537,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
   <section class="section" id="coaching-programmes">
     <div class="section-eyebrow">The programmes</div>
     <h2 class="section-headline">Three ways to work <em>with TAPL</em></h2>
-    <p class="section-sub" style="margin-bottom:72px;">Whether you are (or suspect you are) wired differently, or building a neuro-inclusive organisation, there's a TAPL programme designed for you.</p>
+    <p class="section-sub" style="margin-bottom:72px;"><strong style="color:var(--white);">A 12-week programme, not a subscription.</strong> Whether you are (or suspect you are) wired differently, or building a neuro-inclusive organisation, there's a TAPL programme designed for you.</p>
 
     <!-- VARIANT A: Horizontal comparison grid -->
     <style>
@@ -1553,12 +1553,25 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
       .prog-col-a-desc{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:24px;min-height:98px;}
       .prog-col-a-price{padding:20px 0;margin-bottom:24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center;}
       .prog-col-a-price-label{font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;}
-      .prog-col-a-price-value{font-family:'Montserrat',sans-serif;font-size:26px;font-weight:700;color:var(--white);}
+      .prog-col-a-price-value{font-family:'Montserrat',sans-serif;font-size:38px;font-weight:900;color:var(--white);line-height:1;letter-spacing:-1px;}
       .prog-col-a-price-per{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--muted);}
-      .prog-col-a-price-sub{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5;}
-      .prog-col-a-features{list-style:none;margin-bottom:22px;flex-grow:1;}
-      .prog-col-a-pay{font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:22px;}
-      .prog-col-a-pay .save{color:var(--red);font-weight:700;}
+      .prog-col-a-price-sub{font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.5;font-weight:600;letter-spacing:0.3px;}
+      .prog-col-a-price-pay{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.5;}
+      .prog-col-a-price-pay .save{color:var(--red);font-weight:700;}
+      .prog-col-a-features{list-style:none;margin-bottom:20px;flex-grow:1;}
+      .alumni-box{border:1px solid rgba(232,69,60,0.32);background:rgba(232,69,60,0.05);border-radius:8px;padding:14px 16px;margin-bottom:22px;}
+      .alumni-eyebrow{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--red);margin-bottom:7px;}
+      .alumni-body{font-size:12.5px;color:var(--muted);line-height:1.6;}
+      .alumni-body strong{color:var(--white);font-weight:700;}
+      .prog-col-a-maint{font-size:12px;color:var(--faint);font-style:italic;line-height:1.5;margin:0 0 18px;}
+      .maint-section{margin-top:32px;padding:32px 36px;border:1px solid var(--border);border-radius:10px;background:var(--card);}
+      .maint-eyebrow{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:16px;}
+      .maint-section p{font-size:14px;color:var(--muted);line-height:1.7;margin:0 0 14px;max-width:640px;}
+      .maint-price{font-family:'Montserrat',sans-serif;font-size:30px;font-weight:900;color:var(--white);margin:18px 0 4px;}
+      .maint-price span{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--muted);}
+      .maint-terms{font-size:12.5px;color:var(--muted);margin-bottom:22px;}
+      .maint-btn{font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.8px;text-transform:uppercase;padding:14px 32px;border-radius:4px;cursor:pointer;border:1px solid var(--red);background:transparent;color:var(--red);transition:all 0.2s;}
+      .maint-btn:hover{background:var(--red);color:#fff;}
       .prog-col-a-features li{font-size:13px;color:var(--muted);line-height:1.55;padding:10px 0;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;}
       .prog-col-a-features li::before{content:'→';color:var(--red);flex-shrink:0;font-weight:700;}
       .prog-col-a-features li:last-child{border-bottom:none;}
@@ -1586,15 +1599,20 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="prog-col-a-subtitle">For individuals</div>
         <p class="prog-col-a-desc">Structured one to one coaching for clients who want consistent support at a lighter intensity. The same 12-week programme, fewer sessions.</p>
         <div class="prog-col-a-price">
-          <div class="prog-col-a-price-value">&pound;550 <span class="prog-col-a-price-per">per month</span></div>
-          <div class="prog-col-a-price-sub">12-week minimum programme, 6 sessions. Then rolling monthly.</div>
+          <div class="prog-col-a-price-value">&pound;1,650</div>
+          <div class="prog-col-a-price-sub">12-week programme &middot; 6 sessions</div>
+          <div class="prog-col-a-price-pay">Pay in full &pound;1,525 <span class="save">(save &pound;125)</span> &middot; or 3 payments of &pound;550</div>
+        </div>
+        <div class="alumni-box">
+          <div class="alumni-eyebrow">Alumni Access</div>
+          <div class="alumni-body">When you finish, keep building. 3 months of Performance Hub Basic included, or Hub Plus at half price. Your choice. <strong>Worth up to &pound;142.</strong></div>
         </div>
         <ul class="prog-col-a-features">
           <li>2 x 40-minute sessions per month</li>
-          <li>Full Performance Hub Plus access included</li>
+          <li>Full Performance Hub Plus access for the programme</li>
           <li>Messages answered within 2 working days</li>
         </ul>
-        <div class="prog-col-a-pay">Pay monthly: 3 payments of &pound;550<br>Or pay in full: &pound;1,525 <span class="save">(save &pound;125)</span></div>
+        <div class="prog-col-a-maint">Continuing afterwards is optional. Maintenance from &pound;350 a month, cancel any time.</div>
         <button class="prog-col-a-btn outline" onclick="showPage('contact-legal')">Book a call</button>
       </div>
       <!-- TAPL Pro (centre, featured) -->
@@ -1605,16 +1623,21 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="prog-col-a-subtitle">For individuals</div>
         <p class="prog-col-a-desc">The core TAPL programme. Deeply personalised performance coaching delivered one to one, built around your specific executive function friction points with bespoke systems designed around them.</p>
         <div class="prog-col-a-price">
-          <div class="prog-col-a-price-value">&pound;950 <span class="prog-col-a-price-per">per month</span></div>
-          <div class="prog-col-a-price-sub">12-week minimum programme, 12 sessions. Then rolling monthly.</div>
+          <div class="prog-col-a-price-value">&pound;2,850</div>
+          <div class="prog-col-a-price-sub">12-week programme &middot; 12 sessions</div>
+          <div class="prog-col-a-price-pay">Pay in full &pound;2,650 <span class="save">(save &pound;200)</span> &middot; or 3 payments of &pound;950</div>
+        </div>
+        <div class="alumni-box">
+          <div class="alumni-eyebrow">Alumni Access</div>
+          <div class="alumni-body">When you finish, keep building. 6 months of Performance Hub Basic included, or Hub Plus at half price. Your choice. <strong>Worth up to &pound;285.</strong></div>
         </div>
         <ul class="prog-col-a-features">
           <li>4 x 40-minute sessions per month</li>
-          <li>Full Performance Hub Plus access included</li>
+          <li>Full Performance Hub Plus access for the programme</li>
           <li>Video and voice support between sessions, answered within 1 working day</li>
           <li>ICF-aligned, bespoke and responsive</li>
         </ul>
-        <div class="prog-col-a-pay">Pay monthly: 3 payments of &pound;950<br>Or pay in full: &pound;2,650 <span class="save">(save &pound;200)</span></div>
+        <div class="prog-col-a-maint">Continuing afterwards is optional. Maintenance from &pound;350 a month, cancel any time.</div>
         <button class="prog-col-a-btn primary" onclick="showPage('contact-legal')">Book a call</button>
       </div>
       <!-- TAPL Business (right) -->
@@ -1624,26 +1647,35 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
         <div class="prog-col-a-subtitle">For teams &amp; businesses</div>
         <p class="prog-col-a-desc">A bespoke blend of Foundation and Pro delivery for organisations, designed to build neuro-inclusive performance cultures. Scoped to your organisation's specific needs and goals.</p>
         <div class="prog-col-a-price">
-          <div class="prog-col-a-price-value" style="font-size:19px;">Investment on request</div>
-          <div class="prog-col-a-price-sub">12-week minimum programme per participant.</div>
+          <div class="prog-col-a-price-value" style="font-size:22px;">Investment on request</div>
+          <div class="prog-col-a-price-sub">12-week programme per participant.</div>
         </div>
         <ul class="prog-col-a-features">
           <li>Bespoke programme design and scoping</li>
           <li>Foundation and Pro delivery blended per client</li>
-          <li>Workflows and Performance Hub licences for participants</li>
+          <li>Performance Hub licences for participants</li>
           <li>Engagement length and format scoped to you</li>
         </ul>
         <button class="prog-col-a-btn outline" onclick="showPage('contact-legal')">Enquire</button>
       </div>
     </div>
 
+    <div class="maint-section">
+      <div class="maint-eyebrow">After the programme</div>
+      <p>Most clients finish the 12 weeks and continue on their own, with Performance Hub keeping the systems in place.</p>
+      <p>Some want to keep a regular check-in. Maintenance is one 40-minute session a month, with full Performance Hub Plus access included.</p>
+      <div class="maint-price">&pound;350 <span>a month</span></div>
+      <div class="maint-terms">Rolling monthly &middot; cancel with 7 days notice &middot; no minimum term</div>
+      <button class="maint-btn" onclick="showPage('contact-legal')">Enquire</button>
+    </div>
+
     <details class="eng-terms">
-      <summary class="eng-terms-summary">How coaching engagements work<span class="eng-terms-icon">+</span></summary>
+      <summary class="eng-terms-summary">How coaching programmes work<span class="eng-terms-icon">+</span></summary>
       <div class="eng-terms-body">
-        <p>All coaching programmes run a 12-week minimum term. Foundation is 6 sessions, Pro and Business are 12. After that, the engagement continues on a rolling monthly basis at the same rate, with 7 days notice to end it.</p>
-        <p>The 12 weeks exist for a delivery reason. Meaningful change in executive function is not typically visible in four sessions, and the early phase of coaching surfaces patterns rather than resolving them. The minimum term gives the work enough runway to be judged fairly.</p>
-        <p>Ending an engagement early during the minimum term is possible on 7 days notice, with an early exit fee. Full terms are set out in the Coaching Services Agreement, which we send before you commit to anything.</p>
-        <p>Payment is by direct debit, in advance of each monthly block, or in full at the start if you take the discounted option.</p>
+        <p>All coaching runs as a 12-week programme. Foundation is 6 sessions, Pro and Business are 12. The programme has a defined start and end.</p>
+        <p>The 12 weeks exist for a delivery reason. Meaningful change in executive function is not typically visible in four sessions, and the early phase of coaching surfaces patterns rather than resolving them. Twelve weeks gives the work enough runway to be judged fairly.</p>
+        <p>Ending a programme early is possible on 7 days notice, with an early exit fee. Full terms are set out in the Coaching Services Agreement, which we send before you commit to anything.</p>
+        <p>Payment is by direct debit, either in three monthly instalments or in full at the start if you take the discounted option.</p>
       </div>
     </details>
 
@@ -1687,7 +1719,7 @@ footer{padding:50px 48px;border-top:1px solid var(--border);display:flex;justify
             <span class="faq-chevron">&#8964;</span>
           </button>
           <div class="faq-answer">
-            TAPL is premium coaching for professionals, business owners and entrepreneurs who are serious about performance. Foundation is &pound;550 a month and Pro is &pound;950 a month, each running as a 12-week minimum programme and then continuing on a rolling monthly basis at the same rate. Both can be paid monthly or in full for a discount, and both include full Performance Hub Plus access. Business programmes are scoped and priced individually. The programme cards set out exactly what each tier includes, and we'll help you choose the right fit on a discovery call.
+            TAPL is premium coaching for professionals, business owners and entrepreneurs who are serious about performance. It runs as a 12-week programme, not a subscription: Foundation is &pound;1,650 (6 sessions) and Pro is &pound;2,850 (12 sessions), each payable in full at a discount or in three monthly instalments. Both include full Performance Hub Plus access for the programme. Business is scoped and priced individually. If you'd like to keep a lighter check-in after the 12 weeks, Maintenance is available from &pound;350 a month. The programme cards set out exactly what each tier includes, and we'll help you choose the right fit on a discovery call.
           </div>
         </div>
         <div class="faq-item">
